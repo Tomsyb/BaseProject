@@ -1,0 +1,16 @@
+编译期间依赖注入，
+完全去除反射机制，
+解耦
+
+1、依赖导入见本工程gradle（studio3.0导入方法区别在于apt）
+
+2、注解使用
+    @Inject：使用场景2种
+        a.标记在构造方法上(需要实例的时候自动调用具有inject的构造方法)
+        b.标记在变量上，使用dagger2提供依赖（Module文件中由@Module和@Provides联合提供）
+    @Provides：
+        a.只能在@Module中使用，使用了该注解的方法在需要提供依赖时被调用
+    @Module:
+        a.此注解的类是专门提供依赖的
+    @Component:
+        a.注入器@inject和@Module之间的桥梁
