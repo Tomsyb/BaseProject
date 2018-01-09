@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/ymvp/ymvp.iml" filepath="$PROJECT_DIR$/ymvp/ymvp.iml" />
       <module fileurl="file://$PROJECT_DIR$/yutils/yutils.iml" filepath="$PROJECT_DIR$/yutils/yutils.iml" />
+      <module fileurl="file://D:\2017\GitHub\BaseProject\yutils\yutils.iml" filepath="D:\2017\GitHub\BaseProject\yutils\yutils.iml" />
     </modules>
   </component>
 </project>

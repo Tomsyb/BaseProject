@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">BaseProject</string>
+    <array name="dagger2mainlist">
+        <item>item</item>
+        <item>item</item>
+        <item>item</item>
+        <item>item</item>
+        <item>item</item>
+        <item>item</item>
+    </array>
 </resources>
