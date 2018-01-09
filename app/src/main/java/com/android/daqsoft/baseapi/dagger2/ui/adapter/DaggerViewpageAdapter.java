@@ -1,4 +1,4 @@
-package com.android.daqsoft.baseapi.dagger2.ui;
+package com.android.daqsoft.baseapi.dagger2.ui.adapter;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
@@ -23,6 +23,7 @@ public class DaggerViewpageAdapter extends PagerAdapter {
 
     /**
      * @Inject 注解
+     * 参数由module提供
      * @param datas
      * @param context
      */

@@ -14,3 +14,7 @@
         a.此注解的类是专门提供依赖的
     @Component:
         a.注入器@inject和@Module之间的桥梁
+    @Singleton
+        a.让我们的依赖成为单列模式(需要在实体类头部和component头部添加@Singleton，详情见SingletonUseActivity)
+    @Scope
+        a.给依赖划分作用域

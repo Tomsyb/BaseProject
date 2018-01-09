@@ -27,6 +27,13 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation project(':ymvp')
     //tools
-    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]//dagger2编译生成工具
-    implementation rootProject.ext.dependencies["picasso"]//图片加载
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    //dagger2编译生成工具
+    implementation rootProject.ext.dependencies["picasso"]
+    //图片加载
+    //view
+    annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
+        exclude module: 'support-annotations'
+    }
+    implementation project(':yutils')
 }
