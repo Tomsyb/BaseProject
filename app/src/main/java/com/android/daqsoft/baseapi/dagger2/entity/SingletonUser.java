@@ -5,6 +5,7 @@ import javax.inject.Singleton;
 
 /**
  * Created by yanbo on 2018/1/9.
+ * @Singleton 表示单列
  */
 @Singleton
 public class SingletonUser {

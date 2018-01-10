@@ -5,9 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 import com.android.daqsoft.baseapi.dagger2.di.component.DaggerSingletonWithModuleComponent;
 import com.android.daqsoft.baseapi.dagger2.di.module.SingletonWithModuleModule;
-import com.android.daqsoft.baseapi.dagger2.entity.SingletonWithModule;
+import com.android.daqsoft.baseapi.dagger2.entity.SingletonWithModuleUser;
 import com.android.daqsoft.baseproject.R;
 
 import javax.inject.Inject;
@@ -20,6 +21,7 @@ import butterknife.OnClick;
  * 单列由module提供
  * 在实体类中不需要任何注解(属于inject的第二种方法)
  */
+
 public class SingletonWithModuleActivity extends AppCompatActivity {
 
     @BindView(R.id.btn_module_1)
@@ -30,9 +32,9 @@ public class SingletonWithModuleActivity extends AppCompatActivity {
     TextView mTvModule2;
 
     @Inject
-    SingletonWithModule mUser1;
+    SingletonWithModuleUser mUser1;
     @Inject
-    SingletonWithModule mUser2;
+    SingletonWithModuleUser mUser2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,7 @@ public class SingletonWithModuleActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_module_1)
     public void onClick() {
-
+        mTvModule1.setText(mUser1.toString());
+        mTvModule2.setText(mUser2.toString());
     }
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.daqsoft.baseapi.dagger2.ui.scope.ScopeActivity">
+    <TextView
+        android:gravity="center"
+        android:text="页面A和B共用一个单列引用地址一样,对比页面AB和C使用的是否一样"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="页面A"/>
+    <Button
+        android:id="@+id/btn_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="页面B"/>
+    <Button
+        android:id="@+id/btn_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="页面C"/>
+
+</LinearLayout>

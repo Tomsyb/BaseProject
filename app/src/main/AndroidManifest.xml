@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name="com.android.daqsoft.app.IApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,20 +14,31 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
         </activity>
+        <!-- *******************************************************Dagger2学习相关****************************************************** -->
         <!-- dagger2的教程 -->
         <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.BaseUseActivity">
         </activity>
         <!-- dagger2的Scope用法 -->
         <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.SingletonUseActivity">
+        </activity>
+        <!-- dagger2的Scope用法带module -->
+        <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.SingletonWithModuleActivity">
+        </activity>
+        <!-- dagger2主页 -->
+        <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.DaggerMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.SingletonWithModuleActivity">
+        <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.scope.ScopeActivity">
         </activity>
-        <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.DaggerMainActivity">
+        <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.scope.ScopeAActivity">
+        </activity>
+        <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.scope.ScopeBActivity">
+        </activity>
+        <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.scope.ScopeCActivity">
         </activity>
     </application>
 

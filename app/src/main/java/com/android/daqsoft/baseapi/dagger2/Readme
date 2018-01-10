@@ -15,6 +15,11 @@
     @Component:
         a.注入器@inject和@Module之间的桥梁
     @Singleton
-        a.让我们的依赖成为单列模式(需要在实体类头部和component头部添加@Singleton，详情见SingletonUseActivity)
+        a.让我们的依赖成为全局单列模式(需要在实体类头部和component头部添加@Singleton，详情见SingletonUseActivity)
     @Scope
-        a.给依赖划分作用域
+        a.给依赖划分作用域(局部单列)
+        b:步骤：（下面场景这样：页面AB共享一个单列C是另一个）
+            定义局部作用域
+            改变Module和Component
+            Appliation类中来初始化这个Component
+            页面AB注入依赖

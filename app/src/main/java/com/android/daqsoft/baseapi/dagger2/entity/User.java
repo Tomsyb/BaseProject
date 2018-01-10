@@ -12,6 +12,7 @@ public class User {
     private String name;
     private int age;
 
+    //标注在构造函数上使用的时候自动寻找到这里初始化不需module提供依赖，但是如果有参数传入就需要module提供了
     @Inject
     public User() {
     }

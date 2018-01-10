@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">BaseProject</string>
     <array name="dagger2mainlist">
-        <item>item</item>
-        <item>item</item>
-        <item>item</item>
-        <item>item</item>
+        <item>Dagger2基本使用</item>
+        <item>Singleton单列模式</item>
+        <item>Singleton单列模式Module提供依赖</item>
+        <item>Scope局部单列使用</item>
         <item>item</item>
         <item>item</item>
     </array>

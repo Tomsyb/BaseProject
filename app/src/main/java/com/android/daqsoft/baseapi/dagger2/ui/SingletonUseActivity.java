@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 import com.android.daqsoft.baseapi.dagger2.di.component.DaggerSingletonUseComponent;
 import com.android.daqsoft.baseapi.dagger2.entity.SingletonUser;
 import com.android.daqsoft.baseapi.dagger2.entity.User;
@@ -22,6 +23,7 @@ import butterknife.OnClick;
  * 单列
  * user构造方法没有参数需要传入就不用module
  */
+
 public class SingletonUseActivity extends AppCompatActivity {
     @BindView(R.id.btn_1)
     Button mBtn1;

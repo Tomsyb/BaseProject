@@ -1,6 +1,6 @@
 package com.android.daqsoft.baseapi.dagger2.di.module;
 
-import com.android.daqsoft.baseapi.dagger2.entity.SingletonWithModule;
+import com.android.daqsoft.baseapi.dagger2.entity.SingletonWithModuleUser;
 
 import javax.inject.Singleton;
 
@@ -13,9 +13,12 @@ import dagger.Provides;
 @Module
 public class SingletonWithModuleModule {
 
+    /**
+     * 单列注解  @Singleton
+     */
     @Provides
     @Singleton
-    SingletonWithModule providesSingleton(){
-        return new SingletonWithModule();
+    SingletonWithModuleUser providesSingleton(){
+        return new SingletonWithModuleUser();
     }
 }
