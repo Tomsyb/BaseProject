@@ -11,6 +11,6 @@ import android.content.Context;
  */
 
 public interface AppComponent {
-    Application mApplication;
+    //Application mApplication;
 
 }

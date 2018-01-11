@@ -8,4 +8,7 @@
         <item>item</item>
         <item>item</item>
     </array>
+    <!--日志需要的字符-->
+    <string name="json">"{\"menu\":[\"泰式柠檬肉片\",\"鸡柳汉堡\",\"蒸桂鱼卷 \"],\"tag\":\"其他\"}"</string>
+    <string name="string_long">咱们一起分析了“知乎”的回答详情页的需求</string>
 </resources>

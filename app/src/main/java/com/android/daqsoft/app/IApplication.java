@@ -5,6 +5,7 @@ import android.app.Application;
 import com.android.daqsoft.baseapi.dagger2.di.component.DaggerScopeUseComponent;
 import com.android.daqsoft.baseapi.dagger2.di.component.ScopeUseComponent;
 import com.android.daqsoft.baseapi.dagger2.di.module.ScopeUseModule;
+import com.android.daqsoft.log.YLog;
 
 
 /**
@@ -20,6 +21,7 @@ public class IApplication extends Application {
                 .builder()
                 .scopeUseModule(new ScopeUseModule())
                 .build();
+        YLog.init(true,"yanb");//初始化log
     }
     public ScopeUseComponent getScopeUseComponent(){
         return mScopeUseComponent;

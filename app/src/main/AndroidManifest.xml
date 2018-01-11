@@ -14,7 +14,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
         </activity>
-        <!-- *******************************************************Dagger2学习相关****************************************************** -->
+
+        <!--==========================================================Dagger2学习相关=========================================================-->
         <!-- dagger2的教程 -->
         <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.BaseUseActivity">
         </activity>
@@ -26,11 +27,7 @@
         </activity>
         <!-- dagger2主页 -->
         <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.DaggerMainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.scope.ScopeActivity">
         </activity>
@@ -39,6 +36,14 @@
         <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.scope.ScopeBActivity">
         </activity>
         <activity android:name="com.android.daqsoft.baseapi.dagger2.ui.scope.ScopeCActivity">
+        </activity>
+        <!--==========================================================Log实例=========================================================-->
+        <activity android:name="com.android.daqsoft.baseapi.log.LogExampleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 
