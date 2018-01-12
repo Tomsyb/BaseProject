@@ -1,6 +1,11 @@
 package com.android.daqsoft.ymvp.di.module;
 
 import android.app.Application;
+import android.content.Context;
+import android.support.annotation.Nullable;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import javax.inject.Singleton;
 
@@ -25,7 +30,20 @@ public class AppModule {
      */
     @Singleton
     @Provides
-    Application providesApplication(){
+    public Application providesApplication(){
         return mApplication;
     }
+    @Singleton
+    @Provides
+    public Gson providesGson(Application application, @Nullable GsonConfig config){
+        GsonBuilder builder = new GsonBuilder();
+        if (builder !=null)
+            config.configGson(application,builder);
+        return builder.create();
+    }
+
+    interface GsonConfig{
+        void configGson(Context context, GsonBuilder builder);
+    }
+
 }

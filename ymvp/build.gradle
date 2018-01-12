@@ -52,6 +52,9 @@ dependencies {
         exclude module: 'appcompat-v7'
         exclude module: 'support-v4'
     }
+    api rootProject.ext.dependencies["gson"]
+    compileOnly rootProject.ext.dependencies["javax.annotation"]
+    api rootProject.ext.dependencies["annotations"]
 }
 
 //*****************************************************studio3.0变化及api****************************************************
